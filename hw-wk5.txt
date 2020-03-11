@@ -1,0 +1,50 @@
+1. form validation is when you fill out a form on a website and and are provided with feedback regarding the data that you have entered in the various form inputs.
+
+2.  a. Html5 built in form validation
+    b. Validating forms using JavaScript: The constraint validation API
+
+3. One of the most important features of HTML5 Form Controls is the ability to validate most user data without JavaScript. This is achieved by using validation attributes on form elements.
+
+This field is required means you can't leave that field blank. In addition, if the field is required message appears, it means that the input boolean attribute is being used called required. 
+
+4. <form action="submit.html" id="userForm">
+                <input type="text" name="username" placeholder="username" pattern="^(?=.*\d)(?=.*[a-zA-Z]).{7,15}$"
+                    title="You have not inputted a valid username. It must contain at least one number and be at least 8 characters long."
+                    required>
+                <input type="email" name="mail" placeholder="email"
+                    pattern="(\b[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}\b)" title="Your email must contain a @ and a valid
+                    .ext" required>
+                <input type="password" name="password" id="password" placeholder="password"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{13,24}$"
+                    title="Your password must contain at least
+                one number, one lowercase and one uppercase letter and must be least 13 characters long, but no more than 24 characters long, containing letters, numbers or the underscore."
+                    required>
+                <button type="submit" form="userForm" id="btn">Submit</button>
+                <button id="btnReset">Reset</button>
+            </form>
+
+5. The main difference is that HTML5 form validation does not us
+JavaScript and the constraint validation API uses JavaScript.
+
+6. “title attribute”
+because it overrides any messages set up via JavaScript using
+the “.setCustomValidity( )” method.
+
+7. Client side validation does not mean secure! checking for valid formats on the client side does NOT mean that the user inputs are secure! Security checks can only be done server-side, so that is left to backend developers to execute. 
+
+8. Client side validation an initial check, and contributes towards good UX (user experience) from the get go.
+    a. client’s valid data
+    b. forcing the users to input secure passwords
+    C. protect from malicious hackers
+
+9. The most significant features of HTML5 form controls is the
+ability to validate most user data without Javascript. This is
+achieved by using validation attributes on form elements.
+
+10. 
+    1. required: specifies whether a form field needs to be filled before the form can be submitted.
+    2. minlength and 3. maxlength: specifies the minimum and maximum length of textual data (strings)
+    4. min and 5. max: specifies the minimum and maximum values of numerical input types
+    6. type: specifies whether the data needs to be a number, an email address, or some other specific preset type.
+    7. pattern: specifies a regular expression that defines a pattern the entered data needs to follow.
+   

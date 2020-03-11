@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shah Ali | Hw 5</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body class="Site">
+    <div class="Site-content">
+      <div class="wrapper">
+        <h1 id="heading">User Registration Form</h1>
+        <form action="submit.html" id="userForm">
+          <input
+            type="text"
+            name="username"
+            placeholder="username"
+            pattern="^(?=.*\d)(?=.*[a-zA-Z]).{7,15}$"
+            required
+          />
+          <input
+            type="email"
+            name="mail"
+            placeholder="email"
+            pattern="(\b[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}\b)"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="create a password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            required
+          />
+          <button type="submit" form="userForm" id="btn">Submit</button>
+          <button id="btnReset">Reset</button>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <p>© 2020 COMD 3663</p>
+    </footer>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
